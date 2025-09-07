@@ -11,7 +11,7 @@ export const personalInfo = {
 export const aboutData = {
   summary: "Software Architect specialized in .NET integration with 3+ years of experience implementing enterprise architectures. Expert in various technologies, performing technical analysis and reviews, leading development teams to deliver robust solutions. Recently completed Computer Engineering degree at University of Alicante while working full-time.",
   highlights: [
-    "Software Architect at Gestión Tributaria Territorial since 2019",
+    "Software Architect at Gestión Tributaria Territorial since 2022",
     "Specialized in .NET enterprise integration and architecture",
     "Led development teams and technical analysis projects",
     "Trilingual professional (German, English, Spanish)",
@@ -69,7 +69,7 @@ export const experience = [
   {
     title: "Software Architect & Programmer Analyst",
     company: "Gestión Tributaria Territorial",
-    period: "January 2019 - Present",
+    period: "May 2022 - Present",
     location: "Alfaz del Pi, Alicante",
     description: "Software Architect and Programmer Analyst specialized in .NET integration, responsible for implementing various technologies in enterprise architectures, performing technical analysis and reviews, leading small development teams to deliver robust solutions.",
     achievements: [
