@@ -111,6 +111,13 @@ export const experience = [
 
 export const education = [
   {
+    degree: "Master's Degree in Cybersecurity",
+    institution: "University of Alicante",
+    period: "September 2025 - Present",
+    location: "San Vicente, Alicante (ES)",
+    description: "Currently pursuing Master's degree in Cybersecurity, building on competitive cybersecurity experience and software architecture expertise."
+  },
+  {
     degree: "Computer Engineering",
     institution: "University of Alicante",
     period: "September 2020 - July 2025",
