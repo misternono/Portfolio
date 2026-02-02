@@ -1,6 +1,6 @@
 export const personalInfo = {
   name: "Noah-Gabriel Winkler",
-  title: "Software Architect & Programmer Analyst",
+  title: "Software Engineer",
   email: "w.noah.gabriel@gmail.com",
   location: "Alicante, Spain",
   linkedin: "https://www.linkedin.com/in/noah-gabriel-winkler",
@@ -9,9 +9,9 @@ export const personalInfo = {
 };
 
 export const aboutData = {
-  summary: "Software Architect specialized in .NET integration with 3+ years of experience implementing enterprise architectures. Expert in various technologies, performing technical analysis and reviews, leading development teams to deliver robust solutions. Recently completed Computer Engineering degree at University of Alicante while working full-time.",
+  summary: "Software Engineer specialized in .NET development with 3+ years of experience implementing enterprise architectures. Expert in various technologies, performing technical analysis and reviews, leading development teams to deliver robust solutions. Recently completed Computer Engineering degree at University of Alicante while working full-time.",
   highlights: [
-    "Software Architect at Gestión Tributaria Territorial since 2022",
+    "Software Engineer at Alten Delivery Center since January 2026",
     "Specialized in .NET enterprise integration and architecture",
     "Led development teams and technical analysis projects",
     "Trilingual professional (German, English, Spanish)",
@@ -67,9 +67,21 @@ export const projects = [
 
 export const experience = [
   {
+    title: "Software Engineer",
+    company: "Alten Delivery Center",
+    period: "January 2026 - Present",
+    location: "Alicante, Spain",
+    description: "Software Engineer specialized in .NET development, working on enterprise solutions for a German Client.",
+    achievements: [
+      "Developing .NET enterprise solutions",
+      "Implementing modern software architecture patterns",
+      "Contributing to team development processes"
+    ]
+  },
+  {
     title: "Software Architect & Programmer Analyst",
     company: "Gestión Tributaria Territorial",
-    period: "May 2022 - Present",
+    period: "May 2022 - December 2025",
     location: "Alfaz del Pi, Alicante",
     description: "Software Architect and Programmer Analyst specialized in .NET integration, responsible for implementing various technologies in enterprise architectures, performing technical analysis and reviews, leading small development teams to deliver robust solutions.",
     achievements: [

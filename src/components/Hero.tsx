@@ -6,6 +6,7 @@ import { personalInfo } from '../data/portfolioData';
 
 const Hero: React.FC = () => {
   const typingText = useTypingEffect([
+    'Software Engineer',
     'Software Architect',
     'Programmer Analyst',
     '.NET Developer',
@@ -84,7 +85,7 @@ const Hero: React.FC = () => {
             variants={itemVariants}
             className="text-xl text-gray-400 max-w-3xl mx-auto mb-12 leading-relaxed"
           >
-            Designing scalable architectures and leading innovative teams to build 
+            Designing scalable architectures and leading innovative teams to build
             next-generation software solutions that transform businesses and delight users.
           </motion.p>
 
@@ -100,7 +101,7 @@ const Hero: React.FC = () => {
             >
               Get In Touch
             </motion.button>
-            
+
             <motion.button
               onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
               className="border-2 border-purple-500 px-8 py-4 rounded-lg text-purple-400 font-semibold hover:bg-purple-500 hover:text-white transition-all duration-200 transform hover:scale-105"
