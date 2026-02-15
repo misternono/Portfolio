@@ -9,7 +9,7 @@ export const personalInfo = {
 };
 
 export const aboutData = {
-  summary: "Software Engineer specialized in .NET development with 3+ years of experience implementing enterprise architectures. Expert in various technologies, performing technical analysis and reviews, leading development teams to deliver robust solutions. Recently completed Computer Engineering degree at University of Alicante while working full-time.",
+  summary: "Software Engineer specialized in .NET development with 3+ years of experience implementing enterprise architectures. Expert in various technologies, performing technical analysis and reviews, leading development teams to deliver robust solutions. Recently completed Computer Engineering degree at University of Alicante while working full-time. Now working on getting my masters in Cybersecurity at University of Alicante.",
   highlights: [
     "Software Engineer at Alten Delivery Center since January 2026",
     "Specialized in .NET enterprise integration and architecture",
@@ -62,6 +62,29 @@ export const projects = [
     image: "https://images.pexels.com/photos/33175656/pexels-photo-33175656.jpeg?auto=compress&cs=tinysrgb&w=800",
     demoUrl: "#",
     githubUrl: "#"
+  },
+  {
+    id: 2,
+    title: "Biometric Signature System",
+    description: "Advanced biometric signature verification system",
+    technologies: ["Cybersecurity", "iOS", "Android"],
+    features: [
+      "Real-time signature capture and analysis",
+      "Biometric pattern recognition for signature verification",
+      "Secure storage and encryption of biometric data",
+      "Multi-factor authentication integration",
+      "RESTful API for third-party integration",
+      "Compliance with digital signature regulations"
+    ],
+    metrics: {
+      accuracy: "Coming Soon",
+      deployment: "Coming Soon",
+      security: "Biometric encryption"
+    },
+    image: "https://images.pexels.com/photos/48148/document-agreement-documents-sign-48148.jpeg?auto=compress&cs=tinysrgb&w=800",
+    demoUrl: "#",
+    githubUrl: "#",
+    status: "coming-soon"
   }
 ];
 
@@ -82,7 +105,7 @@ export const experience = [
     title: "Software Architect & Programmer Analyst",
     company: "Gestión Tributaria Territorial",
     period: "May 2022 - December 2025",
-    location: "Alfaz del Pi, Alicante",
+    location: "Alicante, Spain",
     description: "Software Architect and Programmer Analyst specialized in .NET integration, responsible for implementing various technologies in enterprise architectures, performing technical analysis and reviews, leading small development teams to deliver robust solutions.",
     achievements: [
       "Architected .NET integration solutions for enterprise systems",
@@ -97,7 +120,7 @@ export const experience = [
     title: "German Language Teacher / Private Classes",
     company: "Freelance",
     period: "January 2019 - May 2022",
-    location: "Alfaz del Pi, Alicante",
+    location: "Alfaz del Pi",
     description: "Provided private German language instruction, leveraging native-level fluency to help students achieve language proficiency goals.",
     achievements: [
       "Developed personalized curriculum for individual students",
@@ -110,7 +133,7 @@ export const experience = [
     title: "Helping Staff / Cashier",
     company: "Supermarket Costa Blanca",
     period: "August 2017 - May 2022",
-    location: "Alfaz del Pi, Alicante",
+    location: "Alfaz del Pi",
     description: "Provided customer service and support in retail environment, developing strong communication skills and attention to detail.",
     achievements: [
       "Maintained excellent customer service standards",

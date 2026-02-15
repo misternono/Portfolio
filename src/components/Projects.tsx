@@ -53,40 +53,57 @@ const Projects: React.FC = () => {
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            {projects.map((project, index) => (
+            {projects.map((project, index) => {
+              const isComingSoon = project.status === 'coming-soon';
+              return (
               <motion.div
                 key={project.id}
                 variants={itemVariants}
-                className="group relative bg-gray-800/50 backdrop-blur-sm rounded-xl overflow-hidden border border-gray-700/50 hover:border-purple-500/50 transition-all duration-300"
-                whileHover={{ y: -10 }}
+                className={`group relative bg-gray-800/50 backdrop-blur-sm rounded-xl overflow-hidden border border-gray-700/50 transition-all duration-300 ${
+                  isComingSoon
+                    ? 'opacity-50 grayscale cursor-not-allowed'
+                    : 'hover:border-purple-500/50'
+                }`}
+                whileHover={isComingSoon ? {} : { y: -10 }}
               >
                 <div className="relative overflow-hidden">
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
+                    className={`w-full h-48 object-cover transition-transform duration-300 ${
+                      !isComingSoon ? 'group-hover:scale-110' : ''
+                    }`}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent"></div>
-                  <div className="absolute top-4 right-4 flex space-x-2">
-                    <motion.a
-                      href={project.githubUrl}
-                      className="w-10 h-10 bg-gray-900/80 backdrop-blur-sm rounded-full flex items-center justify-center text-gray-300 hover:text-purple-400 transition-colors duration-200"
-                      whileHover={{ scale: 1.1 }}
-                      whileTap={{ scale: 0.95 }}
-                    >
-                      <Github size={18} />
-                    </motion.a>
-                    {project.demoUrl !== "#" && (
+                  {isComingSoon && (
+                    <div className="absolute inset-0 flex items-center justify-center bg-black/60">
+                      <span className="text-2xl font-bold text-white bg-purple-600 px-6 py-3 rounded-lg">
+                        Coming Soon
+                      </span>
+                    </div>
+                  )}
+                  {!isComingSoon && (
+                    <div className="absolute top-4 right-4 flex space-x-2">
                       <motion.a
-                        href={project.demoUrl}
+                        href={project.githubUrl}
                         className="w-10 h-10 bg-gray-900/80 backdrop-blur-sm rounded-full flex items-center justify-center text-gray-300 hover:text-purple-400 transition-colors duration-200"
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.95 }}
                       >
-                        <ExternalLink size={18} />
+                        <Github size={18} />
                       </motion.a>
-                    )}
-                  </div>
+                      {project.demoUrl !== "#" && (
+                        <motion.a
+                          href={project.demoUrl}
+                          className="w-10 h-10 bg-gray-900/80 backdrop-blur-sm rounded-full flex items-center justify-center text-gray-300 hover:text-purple-400 transition-colors duration-200"
+                          whileHover={{ scale: 1.1 }}
+                          whileTap={{ scale: 0.95 }}
+                        >
+                          <ExternalLink size={18} />
+                        </motion.a>
+                      )}
+                    </div>
+                  )}
                 </div>
 
                 <div className="p-6">
@@ -116,16 +133,22 @@ const Projects: React.FC = () => {
 
 
                   <motion.button
-                    onClick={() => setSelectedProject(project)}
-                    className="w-full py-2 bg-gradient-to-r from-purple-600 to-purple-700 text-white rounded-lg hover:from-purple-700 hover:to-purple-800 transition-all duration-200"
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
+                    onClick={() => !isComingSoon && setSelectedProject(project)}
+                    disabled={isComingSoon}
+                    className={`w-full py-2 rounded-lg transition-all duration-200 ${
+                      isComingSoon
+                        ? 'bg-gray-700 text-gray-500 cursor-not-allowed'
+                        : 'bg-gradient-to-r from-purple-600 to-purple-700 text-white hover:from-purple-700 hover:to-purple-800'
+                    }`}
+                    whileHover={isComingSoon ? {} : { scale: 1.02 }}
+                    whileTap={isComingSoon ? {} : { scale: 0.98 }}
                   >
-                    View Details
+                    {isComingSoon ? 'Coming Soon' : 'View Details'}
                   </motion.button>
                 </div>
               </motion.div>
-            ))}
+              );
+            })}
           </div>
         </motion.div>
       </div>

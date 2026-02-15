@@ -18,7 +18,7 @@ function App() {
   useEffect(() => {
     // Update document title
     document.title = 'Noah-Gabriel Winkler - Software Architect & .NET Developer';
-    
+
     // Add meta description for SEO
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
@@ -46,7 +46,7 @@ function App() {
       "name": "Noah-Gabriel Winkler",
       "jobTitle": "Software Architect & .NET Developer",
       "description": "Software Architect specialized in .NET integration and enterprise architectures",
-      "url": "https://noah-winkler.dev",
+      "url": "https://ngwinkler.com",
       "email": "w.noah.gabriel@gmail.com",
       "address": {
         "@type": "PostalAddress",
@@ -74,7 +74,7 @@ function App() {
       {/* Background Elements */}
       <BackgroundParticles />
       <ScrollProgress />
-      
+
       {/* Main Content */}
       <Header />
       <main>
